@@ -170,7 +170,7 @@ const BlogArticlePage = () => {
   };
 
   return (
-    <main className="relative">
+    <main id="main-content" className="relative">
       <Navbar />
 
       {/* Hero */}

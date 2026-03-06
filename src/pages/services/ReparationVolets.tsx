@@ -58,7 +58,7 @@ const ReparationVoletsPage = () => {
   }, []);
 
   return (
-    <main className="relative">
+    <main id="main-content" className="relative">
       <Navbar />
       <section ref={heroRef} className="relative pt-24 pb-16 min-h-[60vh] flex items-center overflow-hidden">
         <motion.div className="absolute inset-0" style={{ y: bgY }}>

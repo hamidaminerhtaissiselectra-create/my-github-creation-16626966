@@ -51,7 +51,7 @@ const QuoteFormSection = () => {
   const canNext = () => {
     if (step === 1) return selectedService !== "";
     if (step === 2) return urgency !== "";
-    if (step === 3) return name && phone && email;
+    if (step === 3) return name.trim() !== "" && /^[\d\s.+()-]{10,}$/.test(phone) && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
     return false;
   };
 
@@ -98,13 +98,13 @@ const QuoteFormSection = () => {
   const currentServices = servicesByMode[mode];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-background to-muted/30 relative overflow-hidden">
+    <section id="quote" className="py-20 bg-gradient-to-b from-background to-muted/30 relative overflow-hidden" aria-labelledby="quote-heading">
       <div className="container mx-auto px-4 relative">
         <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }} className="text-center max-w-2xl mx-auto mb-10">
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/10 text-accent text-sm font-semibold border border-accent/20 mb-4">
             ⚡ Réponse en moins de 24h
           </span>
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mt-2 mb-4">
+          <h2 id="quote-heading" className="font-display text-3xl md:text-4xl font-bold text-foreground mt-2 mb-4">
             Comment pouvons-nous vous aider ?
           </h2>
           <p className="text-muted-foreground text-lg">Choisissez votre type de demande et répondez à quelques questions.</p>

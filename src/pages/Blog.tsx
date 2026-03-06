@@ -43,7 +43,7 @@ const BlogPage = () => {
   const categories = [...new Set(blogArticles.map((a) => a.category))];
 
   return (
-    <main className="relative">
+    <main id="main-content" className="relative">
       <Navbar />
       
       {/* Hero */}
