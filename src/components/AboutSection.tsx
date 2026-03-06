@@ -28,7 +28,7 @@ const AboutSection = () => (
           Répar'Action Volets : Votre Artisan Expert en Volets Roulants à Paris depuis 10 ans
         </h2>
         <p className="text-muted-foreground leading-relaxed text-lg mb-4">
-          Fondée il y a plus de 10 ans, Répar'Action Volets s'est imposée comme la référence incontournable de la réparation, de l'installation et de la motorisation de volets roulants à Paris et en Île-de-France. Notre engagement est simple : vous offrir un service de qualité, rapide et transparent, pour que votre habitat reste sécurisé, confortable et économe en énergie.
+          Fondée il y a plus de 10 ans, Répar'Action Volets s'est imposée comme la référence incontournable du dépannage, de la réparation, de l'installation et de la motorisation de volets roulants à Paris et en Île-de-France. Notre engagement est simple : vous offrir un service de qualité, rapide et transparent, pour que votre habitat reste sécurisé, confortable et économe en énergie.
         </p>
         <p className="text-muted-foreground leading-relaxed text-sm">
           Basés à Fontenay-Trésigny (77), nous avons développé un réseau de techniciens répartis stratégiquement sur l'ensemble de la région parisienne. Chaque artisan est formé en continu sur les dernières technologies de motorisation Somfy io-homecontrol, les solutions solaires Bubendorff ID2 et les systèmes domotiques connectés Google Home et Alexa. Notre flotte de véhicules équipés embarque un stock permanent de pièces détachées — moteurs, condensateurs, sangles, lames aluminium et PVC — pour résoudre 95% des pannes dès le premier passage.

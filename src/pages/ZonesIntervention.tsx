@@ -44,9 +44,9 @@ const ZonesIntervention = () => {
   const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "25%"]);
 
   useSEO({
-    title: "Zones d'Intervention France | Réparation & Installation Volets Roulants | Répar'Action Volets",
-    description: "Répar'Action Volets intervient à Paris, Île-de-France et partout en France pour la réparation, l'installation et la motorisation de vos volets roulants. Intervention express en 24-48h.",
-    keywords: "réparation volets roulants France, installation volets roulants, motorisation volets, dépannage volets express, zones intervention",
+    title: "Zones d'Intervention France | Dépannage & Réparation Volets Roulants | Répar'Action Volets",
+    description: "Répar'Action Volets intervient à Paris, Île-de-France et partout en France pour le dépannage, la réparation, l'installation et la motorisation de vos volets roulants. Intervention express en 24-48h.",
+    keywords: "dépannage volets roulants France, réparation volets roulants, installation volets roulants, motorisation volets, zones intervention",
     canonicalUrl: "https://reparaction-volets.fr/zones-intervention",
   });
 
@@ -66,7 +66,7 @@ const ZonesIntervention = () => {
   const faqs = [
     {
       question: "Où intervenez-vous en priorité ?",
-      answer: "Répar'Action Volets intervient en priorité à Paris et en Île-de-France, avec des délais garantis de 24 à 48h. Nous couvrons également l'ensemble des grandes métropoles françaises pour vos besoins de réparation et installation."
+      answer: "Répar'Action Volets intervient en priorité à Paris et en Île-de-France, avec des délais garantis de 24 à 48h. Nous couvrons également l'ensemble des grandes métropoles françaises pour vos besoins de dépannage, réparation et installation."
     },
     {
       question: "Quels sont les délais d'intervention à Paris ?",
@@ -118,7 +118,7 @@ const ZonesIntervention = () => {
               transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
               className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-8 text-foreground"
             >
-              Nos Zones d'Intervention : <span className="text-accent">Réparation & Installation</span> partout en France
+              Nos Zones d'Intervention : <span className="text-accent">Dépannage & Réparation</span> partout en France
             </motion.h1>
             
             <motion.p 

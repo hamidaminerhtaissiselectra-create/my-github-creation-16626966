@@ -180,7 +180,7 @@ const ZoneCityPage = ({ city }: ZoneCityPageProps) => {
                 Pour la réparation de volets roulants à {city.name}, Répar'Action Volets intervient en 48h maximum, propose un devis gratuit et sans engagement, et garantit ses interventions 3 ans. Nos techniciens certifiés RGE et Qualibat sont disponibles 7j/7.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Expertise complète : réparation, installation, remplacement et motorisation de volets roulants. Marques : Somfy, Bubendorff, Profalux.
+                Expertise complète : dépannage, réparation, installation et motorisation de volets roulants. Marques : Somfy, Bubendorff, Profalux.
               </p>
             </div>
           </AnimatedSection>

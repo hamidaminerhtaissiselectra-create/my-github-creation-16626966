@@ -15,9 +15,9 @@ import { useSEO } from "@/hooks/useSEO";
 
 const Index = () => {
   useSEO({
-    title: "Répar'Action Volets — Réparation, Installation & Motorisation de Volets Roulants à Paris | Expert RGE",
-    description: "Répar'Action Volets : expert certifié RGE en réparation, installation et motorisation de volets roulants à Paris et en Île-de-France. Intervention sous 48h, diagnostic gratuit, garantie 3 ans pièces et main d'œuvre. Devis en ligne.",
-    keywords: "réparation volet roulant Paris, installation volet roulant, motorisation volet, dépannage volet, volet bloqué, artisan RGE, vitrerie Paris, Somfy, Bubendorff, devis gratuit",
+    title: "Répar'Action Volets — Dépannage, Réparation & Motorisation de Volets Roulants à Paris | Expert RGE",
+    description: "Répar'Action Volets : expert certifié RGE en dépannage, réparation, installation et motorisation de volets roulants à Paris et en Île-de-France. Intervention sous 48h, diagnostic gratuit, garantie 3 ans pièces et main d'œuvre. Devis en ligne.",
+    keywords: "dépannage volet roulant Paris, réparation volet roulant, installation volet roulant, motorisation volet, volet bloqué, artisan RGE, vitrerie Paris, Somfy, Bubendorff, devis gratuit",
     canonicalUrl: "https://reparaction-volets.fr/",
     ogImage: "https://reparaction-volets.fr/images/og-image.webp",
   });

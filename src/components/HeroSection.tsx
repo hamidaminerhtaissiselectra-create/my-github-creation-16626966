@@ -55,7 +55,7 @@ const HeroSection = () => {
             transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
             className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-8 text-foreground"
           >
-            Réparation, Installation & Motorisation de <span className="text-accent">Volets Roulants</span> à Paris
+            Dépannage, Réparation & Motorisation de <span className="text-accent">Volets Roulants</span> à Paris
           </motion.h1>
 
           <motion.p 
@@ -64,7 +64,7 @@ const HeroSection = () => {
             transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
             className="text-lg md:text-xl text-muted-foreground mb-6 max-w-2xl leading-relaxed hero-description"
           >
-            Répar'Action Volets, votre spécialiste de la réparation, installation et motorisation de volets roulants à Paris et en Île-de-France. Techniciens certifiés RGE, intervention rapide sous 48h, diagnostic 100% gratuit et garantie 3 ans pièces & main d'œuvre.
+            Répar'Action Volets, votre spécialiste du dépannage, de la réparation, installation et motorisation de volets roulants à Paris et en Île-de-France. Techniciens certifiés RGE, intervention rapide sous 48h, diagnostic 100% gratuit et garantie 3 ans pièces & main d'œuvre.
           </motion.p>
           <motion.p 
             initial={{ opacity: 0, y: 20 }} 
