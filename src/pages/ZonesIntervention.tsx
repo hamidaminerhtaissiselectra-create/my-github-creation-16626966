@@ -192,19 +192,22 @@ const ZonesIntervention = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-12 bg-card border-y border-border">
+      {/* Stats Section - colorée comme la page d'accueil */}
+      <section className="py-14 bg-card border-y border-border">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
-              <motion.div key={index} {...staggerItem(index)} className="text-center">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent/10 text-accent mb-4">
-                  <stat.icon className="w-6 h-6" />
-                </div>
-                <div className={`text-3xl font-bold ${stat.color}`}>{stat.value}</div>
-                <div className="text-sm text-muted-foreground">{stat.label}</div>
-              </motion.div>
-            ))}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {stats.map((stat, index) => {
+              const bgColors = ["bg-service-blue", "bg-service-violet", "bg-service-emerald", "bg-service-orange"];
+              return (
+                <motion.div key={index} {...staggerItem(index)} className="text-center p-6 rounded-2xl bg-background border border-border card-shadow hover:card-shadow-hover transition-all">
+                  <div className={`inline-flex items-center justify-center w-14 h-14 rounded-xl ${bgColors[index]} shadow-lg mb-4`}>
+                    <stat.icon className="w-7 h-7 text-white" />
+                  </div>
+                  <div className={`text-3xl font-extrabold ${stat.color}`}>{stat.value}</div>
+                  <div className="text-sm text-muted-foreground font-semibold mt-1">{stat.label}</div>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </section>
