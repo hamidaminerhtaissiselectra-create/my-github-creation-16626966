@@ -29,7 +29,7 @@ const Footer = () => (
         <div>
           <div className="font-display font-bold text-2xl mb-4">Répar'Action <span className="text-accent">Volets</span></div>
           <p className="text-primary-foreground/70 text-sm leading-relaxed mb-3">
-            Spécialiste de la réparation et de l'installation de volets roulants à Paris et en Île-de-France. Qualité, rapidité et garantie 3 ans pièces et main d'œuvre.
+            Spécialiste du dépannage, de la réparation et de l'installation de volets roulants à Paris et en Île-de-France. Qualité, rapidité et garantie 3 ans pièces et main d'œuvre.
           </p>
           <p className="text-primary-foreground/50 text-xs mb-3">SIRET : 982 156 978 000 16</p>
           <div className="flex flex-wrap gap-2 mb-4">

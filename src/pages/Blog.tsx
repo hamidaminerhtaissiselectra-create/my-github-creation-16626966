@@ -34,8 +34,8 @@ const BlogPage = () => {
 
   useSEO({
     title: "Blog Expert Volets & Vitrerie | Conseils, Guides & Comparatifs | Répar'Action Volets",
-    description: "Conseils professionnels, guides d'entretien, comparatifs de marques et actualités sur les volets roulants et la vitrerie. Articles rédigés par nos experts.",
-    keywords: "blog volet roulant, entretien volet, guide motorisation, comparatif Somfy Bubendorff, conseils vitrerie",
+    description: "Conseils professionnels, guides de dépannage et d'entretien, comparatifs de marques et actualités sur les volets roulants et la vitrerie. Articles rédigés par nos experts.",
+    keywords: "blog volet roulant, dépannage volet, entretien volet, guide motorisation, comparatif Somfy Bubendorff, conseils vitrerie",
     canonicalUrl: "https://reparaction-volets.fr/blog",
   });
 
@@ -345,7 +345,7 @@ const BlogPage = () => {
           <motion.div {...fadeUp} className="max-w-3xl mx-auto">
             <Accordion type="single" collapsible className="space-y-3">
               {[
-                { q: "Vos articles de blog sont-ils rédigés par des professionnels ?", a: "Oui, chaque article est rédigé ou validé par nos techniciens certifiés RGE, forts de plus de 10 ans d'expérience terrain en réparation, installation et motorisation de volets roulants à Paris et en Île-de-France." },
+                { q: "Vos articles de blog sont-ils rédigés par des professionnels ?", a: "Oui, chaque article est rédigé ou validé par nos techniciens certifiés RGE, forts de plus de 10 ans d'expérience terrain en dépannage, réparation, installation et motorisation de volets roulants à Paris et en Île-de-France." },
                 { q: "Puis-je diagnostiquer ma panne de volet grâce à vos guides ?", a: "Nos guides pratiques vous aident à identifier les pannes courantes (sangle cassée, moteur en panne, lames abîmées). Pour un diagnostic précis et une réparation durable, nous recommandons l'intervention d'un technicien qualifié — le diagnostic est offert." },
                 { q: "Quelles marques de volets recommandez-vous dans vos comparatifs ?", a: "Nos comparatifs couvrent les marques leaders du marché : Somfy, Bubendorff, Profalux, Franciaflex, Simu et Nice. Nous testons et installons ces marques quotidiennement, ce qui nous permet de donner des avis objectifs basés sur notre expérience terrain." },
                 { q: "Proposez-vous des conseils pour réduire sa facture énergétique ?", a: "Oui, plusieurs articles traitent de l'isolation thermique via les volets roulants, du choix du vitrage performant et des aides financières disponibles (MaPrimeRénov', éco-PTZ). Des gestes simples comme la motorisation programmée peuvent réduire votre consommation de 15 à 25%." },
@@ -389,7 +389,7 @@ const BlogPage = () => {
               Nos Zones d'Intervention en France
             </h2>
             <p className="text-muted-foreground">
-              Retrouvez nos services de réparation, installation et motorisation de volets roulants dans toute la France.
+              Retrouvez nos services de dépannage, réparation, installation et motorisation de volets roulants dans toute la France.
             </p>
           </motion.div>
 

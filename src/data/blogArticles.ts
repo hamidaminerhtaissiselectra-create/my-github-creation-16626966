@@ -865,7 +865,7 @@ Intervention sous 24h garantie. Appelez le **06 03 20 59 67**.`
   {
     id: "reparation-volet-creteil-94",
     title: "Réparation Volets Roulants Créteil et Val-de-Marne (94) : Service de Proximité",
-    excerpt: "Votre expert en volets roulants à Créteil, Vitry-sur-Seine, Ivry et dans tout le Val-de-Marne. Réparation, installation et motorisation.",
+    excerpt: "Votre expert en volets roulants à Créteil, Vitry-sur-Seine, Ivry et dans tout le Val-de-Marne. Dépannage, réparation, installation et motorisation.",
     date: "24 janvier 2026",
     author: "Répar'Action Volets",
     category: "Île-de-France Local",

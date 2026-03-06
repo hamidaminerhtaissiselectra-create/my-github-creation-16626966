@@ -47,8 +47,8 @@ const AboutUsPage = () => {
 
   useSEO({
     title: "Qui Sommes-Nous ? | Répar'Action Volets - Experts Volets depuis 10 ans",
-    description: "Découvrez Répar'Action Volets : plus de 10 ans d'expertise en réparation, installation et motorisation de volets roulants. Certifiés RGE, Qualibat. Garantie 3 ans.",
-    keywords: "Répar'Action Volets, expert volet roulant, certifié RGE, Qualibat, réparation volet, qui sommes nous",
+    description: "Découvrez Répar'Action Volets : plus de 10 ans d'expertise en dépannage, réparation, installation et motorisation de volets roulants. Certifiés RGE, Qualibat. Garantie 3 ans.",
+    keywords: "Répar'Action Volets, expert volet roulant, dépannage volet, certifié RGE, Qualibat, réparation volet, qui sommes nous",
     canonicalUrl: "https://reparaction-volets.fr/qui-sommes-nous",
   });
 
@@ -67,7 +67,7 @@ const AboutUsPage = () => {
       "name": "Répar'Action Volets",
       "url": "https://reparaction-volets.fr",
       "logo": "https://reparaction-volets.fr/logo.png",
-      "description": "Expert en réparation, installation et motorisation de volets roulants depuis plus de 10 ans. Présent à Paris et dans toute la France.",
+      "description": "Expert en dépannage, réparation, installation et motorisation de volets roulants depuis plus de 10 ans. Présent à Paris et dans toute la France.",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "62 Rue Emile Zola",
@@ -122,7 +122,7 @@ const AboutUsPage = () => {
               Qui Sommes-Nous ? Votre Expert en Volets depuis 10 ans
             </h1>
             <p className="text-lg text-foreground/70 mb-8 leading-relaxed">
-              Répar'Action Volets est une entreprise spécialisée dans la réparation, l'installation et la motorisation de volets roulants. Depuis plus de 10 ans, nous servons les clients à Paris et dans toute la France avec expertise et professionnalisme.
+              Répar'Action Volets est une entreprise spécialisée dans le dépannage, la réparation, l'installation et la motorisation de volets roulants. Depuis plus de 10 ans, nous servons les clients à Paris et dans toute la France avec expertise et professionnalisme.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button size="lg" variant="accent" asChild className="gap-2 shadow-lg shadow-accent/25 rounded-full">
@@ -146,7 +146,7 @@ const AboutUsPage = () => {
             <motion.div {...fadeRight}>
               <h2 className="font-display text-3xl font-bold text-foreground mb-6">Notre Expertise & Savoir-Faire</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Avec plus de 10 ans d'expérience, Répar'Action Volets s'est établi comme le leader incontournable de la réparation et de l'installation de volets roulants à Paris et en Île-de-France. Notre équipe de techniciens certifiés maîtrise tous les types de volets : manuels, électriques, solaires, ainsi que les dernières technologies domotiques.
+                Avec plus de 10 ans d'expérience, Répar'Action Volets s'est établi comme le leader incontournable du dépannage, de la réparation et de l'installation de volets roulants à Paris et en Île-de-France. Notre équipe de techniciens certifiés maîtrise tous les types de volets : manuels, électriques, solaires, ainsi que les dernières technologies domotiques.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
                 Nous intervenons sur toutes les marques reconnues (Somfy, Bubendorff, Profalux, Franciaflex, etc.) et disposons d'un stock complet de pièces de rechange pour assurer une intervention rapide et efficace. Notre diagnostic gratuit et notre devis transparent vous permettent de prendre la meilleure décision.
