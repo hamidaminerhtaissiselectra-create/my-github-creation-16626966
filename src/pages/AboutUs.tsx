@@ -99,7 +99,7 @@ const AboutUsPage = () => {
   }, []);
 
   return (
-    <main className="relative">
+    <main id="main-content" className="relative">
       <Navbar />
       
       {/* Hero Section with Background Image */}

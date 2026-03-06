@@ -31,7 +31,7 @@ const OptimizedPicture = ({
   placeholder,
 }: OptimizedPictureProps) => {
   const [isLoaded, setIsLoaded] = useState(priority);
-  const [imageSrc, setImageSrc] = useState(priority ? src : placeholder);
+  const [imageSrc, setImageSrc] = useState<string | undefined>(priority ? src : placeholder);
   const pictureRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -71,8 +71,8 @@ const OptimizedPicture = ({
   };
 
   // Générer les chemins WebP et fallback
-  const webpSrc = imageSrc.replace(/\.(jpg|jpeg|png)$/i, '.webp');
-  const jpgSrc = imageSrc;
+  const webpSrc = (imageSrc || src).replace(/\.(jpg|jpeg|png)$/i, '.webp');
+  const jpgSrc = imageSrc || src;
 
   return (
     <div ref={pictureRef} className={cn('overflow-hidden', className)}>

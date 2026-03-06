@@ -14,7 +14,7 @@ const NotFound = () => {
   });
 
   return (
-    <main className="relative">
+    <main id="main-content" className="relative">
       <Navbar />
       
       {/* 404 Hero Section */}

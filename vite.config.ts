@@ -25,7 +25,7 @@ export default defineConfig(({ mode }) => ({
     rollupOptions: {
       output: {
         assetFileNames: (assetInfo) => {
-          const extType = assetInfo.name.split(".").at(1);
+          const extType = (assetInfo.name ?? '').split(".").at(1);
           if (/png|jpe?g|gif|svg|webp|ico/i.test(extType || "")) {
             return `assets/images/[name]-[hash][extname]`;
           } else if (/woff|woff2|ttf|otf|eot/i.test(extType || "")) {

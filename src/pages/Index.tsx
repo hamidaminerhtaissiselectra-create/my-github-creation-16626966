@@ -51,7 +51,7 @@ const Index = () => {
   }, []);
 
   return (
-    <main className="relative">
+    <main id="main-content" className="relative">
       <Navbar />
       <HeroSection />
       <ServicesSection />
