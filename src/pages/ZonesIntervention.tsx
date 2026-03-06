@@ -192,105 +192,138 @@ const ZonesIntervention = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-12 bg-card border-y border-border">
+      {/* Stats Section - colorée comme la page d'accueil */}
+      <section className="py-14 bg-card border-y border-border">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
-              <motion.div key={index} {...staggerItem(index)} className="text-center">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent/10 text-accent mb-4">
-                  <stat.icon className="w-6 h-6" />
-                </div>
-                <div className={`text-3xl font-bold ${stat.color}`}>{stat.value}</div>
-                <div className="text-sm text-muted-foreground">{stat.label}</div>
-              </motion.div>
-            ))}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {stats.map((stat, index) => {
+              const bgColors = ["bg-service-blue", "bg-service-violet", "bg-service-emerald", "bg-service-orange"];
+              return (
+                <motion.div key={index} {...staggerItem(index)} className="text-center p-6 rounded-2xl bg-background border border-border card-shadow hover:card-shadow-hover transition-all">
+                  <div className={`inline-flex items-center justify-center w-14 h-14 rounded-xl ${bgColors[index]} shadow-lg mb-4`}>
+                    <stat.icon className="w-7 h-7 text-white" />
+                  </div>
+                  <div className={`text-3xl font-extrabold ${stat.color}`}>{stat.value}</div>
+                  <div className="text-sm text-muted-foreground font-semibold mt-1">{stat.label}</div>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </section>
 
-      {/* Paris & IdF - Présentation par Blocs (Image + Texte) */}
-      <section className="py-20 bg-background">
+      {/* IdF & Paris - Sections INVERSÉES + amélioration visuelle */}
+      <section className="py-20 bg-section-gradient">
         <div className="container mx-auto px-4">
           
-          {/* Bloc Paris */}
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }} 
+            whileInView={{ opacity: 1, y: 0 }} 
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="text-center max-w-2xl mx-auto mb-16"
+          >
+            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 text-accent text-sm font-semibold border border-accent/20 mb-4">
+              <Building2 className="h-3.5 w-3.5" /> Nos Zones Prioritaires
+            </span>
+            <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mt-2 mb-4">
+              Paris & Île-de-France : Notre Cœur d'Activité
+            </h2>
+            <p className="text-muted-foreground">
+              Intervention express garantie dans toute la région parisienne avec nos techniciens certifiés.
+            </p>
+          </motion.div>
+
+          {/* Bloc Île-de-France (PREMIER) */}
           <AnimatedSection animation="fade-up">
             <div className="grid md:grid-cols-2 gap-12 items-center mb-24">
               <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl group">
                 <img 
-                  src={parisCityscapeImg} 
-                  alt="Réparation volets Paris" 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  src={ileDeFranceImg} 
+                  alt="Réparation volets Île-de-France" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors" />
+                <div className="absolute inset-0 bg-gradient-to-t from-foreground/30 to-transparent group-hover:from-foreground/10 transition-all duration-500" />
+                <div className="absolute top-4 left-4 w-12 h-12 rounded-xl bg-service-blue shadow-[0_4px_14px_hsl(213,72%,50%,0.35)] flex items-center justify-center">
+                  <MapPin className="h-6 w-6 text-white" strokeWidth={2} />
+                </div>
               </div>
               <div>
-                <Badge variant="default" className="gap-2 px-3 py-1 rounded-full text-sm font-semibold mb-4 bg-service-orange/10 text-service-orange border border-service-orange/20">
-                  <Zap className="h-3.5 w-3.5" /> Secteur Prioritaire
+                <Badge variant="serviceBlue" className="gap-2 px-3 py-1.5 rounded-full text-sm font-bold mb-4">
+                  <MapPin className="h-3.5 w-3.5" /> Couverture Régionale
                 </Badge>
-                <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">Réparation de Volets à Paris</h2>
+                <h2 className="font-display text-3xl md:text-4xl font-bold mb-6 text-foreground">Intervention en Île-de-France</h2>
                 <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                  Répar'Action Volets est votre expert de proximité dans tous les arrondissements de Paris. Nous intervenons en urgence pour tout dépannage de volet roulant bloqué ou moteur en panne. Grâce à notre système de géolocalisation intelligente et notre réseau de techniciens répartis stratégiquement, nous garantissons une intervention rapide et efficace, même en heures creuses.
+                  Nous couvrons l'intégralité de la région parisienne avec une présence locale dans tous les départements. Nos techniciens circulent quotidiennement dans les départements 77, 78, 91, 92, 93, 94 et 95.
                 </p>
                 <p className="text-muted-foreground mb-8 leading-relaxed">
-                  Nos équipes maîtrisent toutes les marques du marché et disposent des pièces de rechange en stock pour une réparation immédiate. Intervention sous 24h à 48h garantie, avec diagnostic gratuit et garantie 3 ans sur nos interventions.
+                  Que vous soyez à Versailles, Créteil, Cergy ou Melun, nous disposons de ressources locales pour intervenir rapidement avec des solutions adaptées.
                 </p>
-                <div className="flex items-center gap-6 mb-8">
-                  <div className="flex flex-col">
-                    <span className="text-3xl font-bold text-accent">20</span>
-                    <span className="text-sm text-muted-foreground">Arrondissements</span>
+                <div className="flex items-center gap-4 mb-8">
+                  <div className="flex flex-col items-center p-3 rounded-xl bg-service-blue/10 border border-service-blue/20">
+                    <span className="text-3xl font-bold text-service-blue">7</span>
+                    <span className="text-xs text-muted-foreground font-semibold">Départements</span>
                   </div>
-                  <div className="w-px h-12 bg-border" />
-                  <div className="flex flex-col">
-                    <span className="text-3xl font-bold text-accent">24h</span>
-                    <span className="text-sm text-muted-foreground">Délai moyen</span>
+                  <div className="flex flex-col items-center p-3 rounded-xl bg-service-emerald/10 border border-service-emerald/20">
+                    <span className="text-3xl font-bold text-service-emerald">50+</span>
+                    <span className="text-xs text-muted-foreground font-semibold">Villes</span>
+                  </div>
+                  <div className="flex flex-col items-center p-3 rounded-xl bg-service-orange/10 border border-service-orange/20">
+                    <span className="text-3xl font-bold text-service-orange">48h</span>
+                    <span className="text-xs text-muted-foreground font-semibold">Garanti</span>
                   </div>
                 </div>
-                <Button size="lg" variant="accent" asChild className="rounded-full px-8">
-                  <Link to="/zones-intervention/paris">
-                    Voir tous les arrondissements <ArrowRight className="ml-2 h-5 w-5" />
+                <Button size="lg" variant="accent" asChild className="rounded-full px-8 shadow-lg">
+                  <Link to="/zones-intervention/ile-de-france">
+                    Découvrir les départements <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
               </div>
             </div>
           </AnimatedSection>
 
-          {/* Bloc Île-de-France */}
+          {/* Bloc Paris (SECOND) */}
           <AnimatedSection animation="fade-up">
-            <div className="grid md:grid-cols-2 gap-12 items-center flex-row-reverse">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="md:order-2 relative aspect-video rounded-2xl overflow-hidden shadow-2xl group">
                 <img 
-                  src={ileDeFranceImg} 
-                  alt="Réparation volets Île-de-France" 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  src={parisCityscapeImg} 
+                  alt="Réparation volets Paris" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors" />
+                <div className="absolute inset-0 bg-gradient-to-t from-foreground/30 to-transparent group-hover:from-foreground/10 transition-all duration-500" />
+                <div className="absolute top-4 left-4 w-12 h-12 rounded-xl bg-service-orange shadow-[0_4px_14px_hsl(25,90%,55%,0.35)] flex items-center justify-center">
+                  <Zap className="h-6 w-6 text-white" strokeWidth={2} />
+                </div>
               </div>
               <div className="md:order-1">
-                <Badge variant="default" className="gap-2 px-3 py-1 rounded-full text-sm font-semibold mb-4 bg-service-blue/10 text-service-blue border border-service-blue/20">
-                  <MapPin className="h-3.5 w-3.5" /> Couverture Régionale
+                <Badge variant="serviceOrange" className="gap-2 px-3 py-1.5 rounded-full text-sm font-bold mb-4">
+                  <Zap className="h-3.5 w-3.5" /> Secteur Prioritaire
                 </Badge>
-                <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">Intervention en Île-de-France</h2>
+                <h2 className="font-display text-3xl md:text-4xl font-bold mb-6 text-foreground">Réparation de Volets à Paris</h2>
                 <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                  Nous couvrons l'intégralité de la région parisienne avec une présence locale dans tous les départements. Nos techniciens circulent quotidiennement dans les départements 77, 78, 91, 92, 93, 94 et 95 pour assurer vos réparations et installations. Grâce à notre optimisation géographique basée sur l'IA, nous réduisons les temps de trajet et proposons des interventions plus rapides et économiques.
+                  Répar'Action Volets est votre expert de proximité dans tous les arrondissements de Paris. Intervention en urgence pour tout dépannage de volet roulant bloqué ou moteur en panne.
                 </p>
                 <p className="text-muted-foreground mb-8 leading-relaxed">
-                  Que vous soyez à Versailles, Créteil, Cergy ou Melun, nous disposons de ressources locales pour intervenir rapidement. Nos équipes connaissent parfaitement chaque commune et peuvent vous proposer des solutions adaptées à votre environnement spécifique.
+                  Nos équipes maîtrisent toutes les marques et disposent des pièces de rechange en stock. Intervention sous 24h à 48h garantie, diagnostic gratuit, garantie 3 ans.
                 </p>
-                <div className="flex items-center gap-6 mb-8">
-                  <div className="flex flex-col">
-                    <span className="text-3xl font-bold text-accent">7</span>
-                    <span className="text-sm text-muted-foreground">Départements</span>
+                <div className="flex items-center gap-4 mb-8">
+                  <div className="flex flex-col items-center p-3 rounded-xl bg-service-orange/10 border border-service-orange/20">
+                    <span className="text-3xl font-bold text-service-orange">20</span>
+                    <span className="text-xs text-muted-foreground font-semibold">Arrondissements</span>
                   </div>
-                  <div className="w-px h-12 bg-border" />
-                  <div className="flex flex-col">
-                    <span className="text-3xl font-bold text-accent">50+</span>
-                    <span className="text-sm text-muted-foreground">Villes desservies</span>
+                  <div className="flex flex-col items-center p-3 rounded-xl bg-service-violet/10 border border-service-violet/20">
+                    <span className="text-3xl font-bold text-service-violet">24h</span>
+                    <span className="text-xs text-muted-foreground font-semibold">Délai moyen</span>
+                  </div>
+                  <div className="flex flex-col items-center p-3 rounded-xl bg-service-emerald/10 border border-service-emerald/20">
+                    <span className="text-3xl font-bold text-service-emerald">3 ans</span>
+                    <span className="text-xs text-muted-foreground font-semibold">Garantie</span>
                   </div>
                 </div>
-                <Button size="lg" variant="accent" asChild className="rounded-full px-8">
-                  <Link to="/zones-intervention/ile-de-france">
-                    Découvrir les départements <ArrowRight className="ml-2 h-5 w-5" />
+                <Button size="lg" variant="accent" asChild className="rounded-full px-8 shadow-lg">
+                  <Link to="/zones-intervention/paris">
+                    Voir tous les arrondissements <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
               </div>
