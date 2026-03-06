@@ -411,7 +411,7 @@ const BlogPage = () => {
                   <div className="h-24 overflow-hidden relative">
                     <img src={r.img} alt={`Intervention volets roulants ${r.name}`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy" />
                     <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent" />
-                    <div className={`absolute bottom-2 left-1/2 -translate-x-1/2 w-8 h-8 rounded-lg bg-${r.color} flex items-center justify-center shadow-lg`}>
+                    <div className={`absolute top-2 left-2 w-8 h-8 rounded-lg bg-${r.color} flex items-center justify-center shadow-lg`}>
                       <MapPin className="h-4 w-4 text-white" />
                     </div>
                   </div>
