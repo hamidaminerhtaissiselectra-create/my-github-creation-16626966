@@ -88,11 +88,20 @@ const BlogPage = () => {
             <div className="flex flex-wrap gap-2">
               {categories.map((cat) => {
                 const style = getCategoryStyle(cat);
+                const colorMap: Record<string, string> = {
+                  serviceBlue: 'bg-service-blue text-white border-service-blue',
+                  serviceOrange: 'bg-service-orange text-white border-service-orange',
+                  serviceViolet: 'bg-service-violet text-white border-service-violet',
+                  serviceCyan: 'bg-service-cyan text-white border-service-cyan',
+                  serviceEmerald: 'bg-service-emerald text-white border-service-emerald',
+                  serviceRose: 'bg-service-rose text-white border-service-rose',
+                  accent: 'bg-accent text-white border-accent',
+                };
                 return (
-                  <Badge key={cat} variant={style.variant} className="px-3 py-1.5 rounded-full text-xs font-bold backdrop-blur-sm shadow-sm">
-                    <style.icon className="h-3 w-3 mr-1" />
+                  <span key={cat} className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold shadow-md backdrop-blur-sm border ${colorMap[style.variant] || colorMap.accent}`}>
+                    <style.icon className="h-3 w-3" />
                     {cat}
-                  </Badge>
+                  </span>
                 );
               })}
             </div>
@@ -124,10 +133,18 @@ const BlogPage = () => {
                 </div>
               )}
               <div className="p-8 md:p-10 flex flex-col justify-center">
-                <Badge variant={featuredStyle.variant} className="px-3 py-1.5 rounded-full text-xs font-bold mb-4 w-fit">
-                  <featuredStyle.icon className="h-3 w-3 mr-1" />
+                <span className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold mb-4 w-fit shadow-sm ${
+                  featuredStyle.variant === 'serviceBlue' ? 'bg-service-blue text-white' :
+                  featuredStyle.variant === 'serviceOrange' ? 'bg-service-orange text-white' :
+                  featuredStyle.variant === 'serviceViolet' ? 'bg-service-violet text-white' :
+                  featuredStyle.variant === 'serviceCyan' ? 'bg-service-cyan text-white' :
+                  featuredStyle.variant === 'serviceEmerald' ? 'bg-service-emerald text-white' :
+                  featuredStyle.variant === 'serviceRose' ? 'bg-service-rose text-white' :
+                  'bg-accent text-white'
+                }`}>
+                  <featuredStyle.icon className="h-3 w-3" />
                   {featuredArticle.category}
-                </Badge>
+                </span>
                 <h3 className="font-display font-bold text-foreground text-2xl md:text-3xl mb-4">{featuredArticle.title}</h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">{featuredArticle.excerpt}</p>
                 <div className="flex items-center gap-4 text-xs text-muted-foreground mb-6">
@@ -378,24 +395,30 @@ const BlogPage = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-5xl mx-auto mb-10">
             {[
-              { name: "Paris (75)", link: "/zones-intervention/paris", color: "service-blue", depts: "20 arrondissements" },
-              { name: "Île-de-France", link: "/zones-intervention/ile-de-france", color: "service-emerald", depts: "7 départements" },
-              { name: "Hauts-de-France", link: "/zones-intervention", color: "service-violet", depts: "5 départements" },
-              { name: "Auvergne-Rhône-Alpes", link: "/zones-intervention", color: "service-orange", depts: "12 départements" },
-              { name: "PACA", link: "/zones-intervention", color: "service-rose", depts: "6 départements" },
-              { name: "Normandie", link: "/zones-intervention", color: "service-cyan", depts: "5 départements" },
-              { name: "Grand Est", link: "/zones-intervention", color: "service-blue", depts: "10 départements" },
-              { name: "Occitanie", link: "/zones-intervention", color: "service-orange", depts: "13 départements" },
-              { name: "Nouvelle-Aquitaine", link: "/zones-intervention", color: "service-emerald", depts: "12 départements" },
-              { name: "Bretagne", link: "/zones-intervention", color: "service-violet", depts: "4 départements" },
+              { name: "Paris (75)", link: "/zones-intervention/paris", color: "service-blue", depts: "20 arrondissements", img: "/images/zones/paris.webp" },
+              { name: "Île-de-France", link: "/zones-intervention/ile-de-france", color: "service-emerald", depts: "7 départements", img: "/images/zones/ile-de-france.webp" },
+              { name: "Hauts-de-France", link: "/zones-intervention", color: "service-violet", depts: "5 départements", img: "/images/zones/hauts-de-france.webp" },
+              { name: "Auvergne-Rhône-Alpes", link: "/zones-intervention", color: "service-orange", depts: "12 départements", img: "/images/zones/auvergne-rhone-alpes.webp" },
+              { name: "PACA", link: "/zones-intervention", color: "service-rose", depts: "6 départements", img: "/images/zones/paca.webp" },
+              { name: "Normandie", link: "/zones-intervention", color: "service-cyan", depts: "5 départements", img: "/images/zones/normandie.webp" },
+              { name: "Grand Est", link: "/zones-intervention", color: "service-blue", depts: "10 départements", img: "/images/zones/grand-est.webp" },
+              { name: "Occitanie", link: "/zones-intervention", color: "service-orange", depts: "13 départements", img: "/images/zones/occitanie.webp" },
+              { name: "Nouvelle-Aquitaine", link: "/zones-intervention", color: "service-emerald", depts: "12 départements", img: "/images/zones/nouvelle-aquitaine.webp" },
+              { name: "Bretagne", link: "/zones-intervention", color: "service-violet", depts: "4 départements", img: "/images/zones/bretagne.webp" },
             ].map((r, i) => (
               <motion.div key={r.name} {...staggerItem(i)}>
-                <Link to={r.link} className="block bg-card rounded-xl p-4 border border-border card-shadow hover:card-shadow-hover transition-all duration-500 text-center group">
-                  <div className={`w-10 h-10 rounded-lg bg-${r.color}/10 flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform`}>
-                    <MapPin className={`h-5 w-5 text-${r.color}`} />
+                <Link to={r.link} className="block bg-card rounded-xl overflow-hidden border border-border card-shadow hover:card-shadow-hover transition-all duration-500 text-center group">
+                  <div className="h-24 overflow-hidden relative">
+                    <img src={r.img} alt={`Intervention volets roulants ${r.name}`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent" />
+                    <div className={`absolute bottom-2 left-1/2 -translate-x-1/2 w-8 h-8 rounded-lg bg-${r.color} flex items-center justify-center shadow-lg`}>
+                      <MapPin className="h-4 w-4 text-white" />
+                    </div>
                   </div>
-                  <h3 className="font-display font-bold text-foreground text-sm mb-1 group-hover:text-accent transition-colors">{r.name}</h3>
-                  <p className="text-xs text-muted-foreground">{r.depts}</p>
+                  <div className="p-3">
+                    <h3 className="font-display font-bold text-foreground text-sm mb-0.5 group-hover:text-accent transition-colors">{r.name}</h3>
+                    <p className="text-xs text-muted-foreground">{r.depts}</p>
+                  </div>
                 </Link>
               </motion.div>
             ))}
