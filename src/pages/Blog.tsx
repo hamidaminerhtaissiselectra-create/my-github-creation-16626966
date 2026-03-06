@@ -1,11 +1,12 @@
 import { useRef, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ArrowRight, Calendar, User, ChevronRight, BookOpen, Phone, Wrench, Zap, GlassWater, Cpu, LayoutGrid, Shield } from "lucide-react";
+import { ArrowRight, Calendar, User, ChevronRight, BookOpen, Phone, Wrench, Zap, GlassWater, Cpu, LayoutGrid, Shield, Star, Quote, MapPin, FileText, ClipboardCheck, Clock, ShieldCheck, HelpCircle } from "lucide-react";
 import { fadeUp, staggerItem, hoverLift } from "@/lib/animations";
 import { useSEO } from "@/hooks/useSEO";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { blogArticles } from "@/data/blogArticles";
