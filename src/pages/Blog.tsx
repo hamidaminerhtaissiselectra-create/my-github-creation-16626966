@@ -1,11 +1,12 @@
 import { useRef, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ArrowRight, Calendar, User, ChevronRight, BookOpen, Phone, Wrench, Zap, GlassWater, Cpu, LayoutGrid, Shield } from "lucide-react";
+import { ArrowRight, Calendar, User, ChevronRight, BookOpen, Phone, Wrench, Zap, GlassWater, Cpu, LayoutGrid, Shield, Star, Quote, MapPin, FileText, ClipboardCheck, Clock, ShieldCheck, HelpCircle } from "lucide-react";
 import { fadeUp, staggerItem, hoverLift } from "@/lib/animations";
 import { useSEO } from "@/hooks/useSEO";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { blogArticles } from "@/data/blogArticles";
@@ -202,6 +203,208 @@ const BlogPage = () => {
                 </motion.div>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* ========== Section Devis Blog ========== */}
+      <section id="devis-blog" className="py-16 md:py-20 bg-section-gradient relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-service-blue/5" />
+        <div className="container mx-auto px-4 relative">
+          <motion.div {...fadeUp} className="text-center max-w-2xl mx-auto mb-10">
+            <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 text-accent text-sm font-semibold border border-accent/20 mb-4">
+              <FileText className="h-3.5 w-3.5" /> Devis Personnalisé
+            </span>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mt-2 mb-4">
+              Un projet de volets ou vitrerie ? Obtenez votre devis
+            </h2>
+            <p className="text-muted-foreground leading-relaxed">
+              Nos experts analysent chaque demande individuellement. Recevez un devis détaillé sous 2h, adapté à vos besoins réels — sans engagement.
+            </p>
+          </motion.div>
+          <motion.div {...fadeUp} className="max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-6 mb-10">
+              {[
+                { icon: ClipboardCheck, title: "Diagnostic offert", desc: "Un technicien certifié évalue votre installation sur place, gratuitement.", color: "service-blue" },
+                { icon: Clock, title: "Réponse sous 2h", desc: "Votre devis chiffré vous est envoyé par email en moins de 2 heures.", color: "service-orange" },
+                { icon: ShieldCheck, title: "Garantie 3 ans", desc: "Toutes nos interventions sont garanties 3 ans pièces et main d'œuvre.", color: "service-emerald" },
+              ].map((item) => (
+                <div key={item.title} className="bg-card rounded-2xl p-6 border border-border card-shadow hover:card-shadow-hover transition-all duration-500 text-center group">
+                  <div className={`w-14 h-14 rounded-xl bg-${item.color}/10 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform`}>
+                    <item.icon className={`h-7 w-7 text-${item.color}`} />
+                  </div>
+                  <h3 className="font-display font-bold text-foreground text-lg mb-2">{item.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+            <div className="text-center">
+              <div className="flex flex-wrap justify-center gap-4">
+                <Button size="lg" variant="accent" className="px-8 py-7 text-lg font-bold rounded-full shadow-xl hover:scale-105 transition-all" asChild>
+                  <a href="/#devis" className="flex items-center gap-2">Demander un Devis Gratuit <ArrowRight className="h-5 w-5" /></a>
+                </Button>
+                <Button size="lg" variant="outline" className="px-8 py-7 text-lg font-bold rounded-full border-accent/30 text-accent hover:bg-accent/10 transition-all" asChild>
+                  <a href="tel:0603205967" className="flex items-center gap-2"><Phone className="h-5 w-5" /> 06 03 20 59 67</a>
+                </Button>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ========== Section Témoignages Blog ========== */}
+      <section className="py-16 md:py-20 bg-background relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-muted/20 to-transparent" />
+        <div className="container mx-auto px-4 relative">
+          <motion.div {...fadeUp} className="text-center max-w-2xl mx-auto mb-6">
+            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-service-orange/10 text-service-orange text-sm font-semibold border border-service-orange/20 mb-4">
+              <Star className="h-3.5 w-3.5" /> Nos clients témoignent
+            </span>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mt-2 mb-4">
+              Avis Clients — Retours d'Expérience Vérifiés
+            </h2>
+            <p className="text-muted-foreground mb-3">Ce que disent nos clients après une intervention Répar'Action Volets.</p>
+          </motion.div>
+
+          <motion.div {...fadeUp} className="flex flex-wrap justify-center gap-5 mb-12">
+            {[
+              { num: "500+", label: "Interventions réalisées", color: "text-service-blue" },
+              { num: "4.9/5", label: "Satisfaction clients", color: "text-service-orange" },
+              { num: "98%", label: "Taux de recommandation", color: "text-service-emerald" },
+            ].map((s) => (
+              <div key={s.label} className="text-center px-6">
+                <div className={`text-2xl font-display font-extrabold ${s.color}`}>{s.num}</div>
+                <div className="text-xs text-muted-foreground mt-0.5">{s.label}</div>
+              </div>
+            ))}
+          </motion.div>
+
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {[
+              { name: "Caroline V.", location: "Paris 11e", text: "Un article du blog m'a aidée à identifier la panne de mon volet. J'ai contacté Répar'Action et le technicien a confirmé le diagnostic. Réparation en 45 minutes, prix conforme au devis. Service irréprochable !", service: "Réparation", badgeColor: "bg-service-blue/10 text-service-blue border-service-blue/20", date: "Février 2026" },
+              { name: "Thomas G.", location: "Levallois-Perret", text: "Grâce au comparatif Somfy vs Bubendorff du blog, j'ai fait le bon choix pour la motorisation de mes volets. L'installation a été impeccable, le technicien très pédagogue. Je recommande les yeux fermés.", service: "Motorisation", badgeColor: "bg-service-violet/10 text-service-violet border-service-violet/20", date: "Janvier 2026" },
+              { name: "Fatima B.", location: "Créteil", text: "Article très utile sur l'isolation thermique via les volets roulants. J'ai demandé un devis pour remplacer mes anciens volets PVC. Résultat : -30% sur ma facture de chauffage cet hiver. Merci Répar'Action !", service: "Installation", badgeColor: "bg-service-emerald/10 text-service-emerald border-service-emerald/20", date: "Décembre 2025" },
+            ].map((t, i) => (
+              <motion.div key={t.name} {...staggerItem(i)} {...hoverLift}
+                className="bg-card rounded-2xl p-8 card-shadow border border-border hover:card-shadow-hover transition-all duration-500"
+              >
+                <div className="flex items-center justify-between mb-6">
+                  <span className={`inline-flex px-3 py-1 rounded-full text-xs font-semibold border ${t.badgeColor}`}>{t.service}</span>
+                  <span className="text-xs text-muted-foreground font-medium">{t.date}</span>
+                </div>
+                <div className="flex gap-1 mb-4">
+                  {Array.from({ length: 5 }).map((_, j) => (
+                    <Star key={j} className="h-4 w-4 fill-service-orange text-service-orange" />
+                  ))}
+                </div>
+                <Quote className="h-8 w-8 text-accent/10 mb-4" />
+                <p className="text-foreground text-sm leading-relaxed mb-6 italic">"{t.text}"</p>
+                <div className="border-t border-border pt-6 mt-auto">
+                  <div className="font-bold text-foreground text-base">{t.name}</div>
+                  <div className="text-xs text-muted-foreground font-medium flex items-center gap-1 mt-1">
+                    <span className="w-1.5 h-1.5 rounded-full bg-service-orange/40" />
+                    {t.location}
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ========== Section FAQ Blog ========== */}
+      <section className="py-16 md:py-20 bg-section-gradient relative overflow-hidden" itemScope itemType="https://schema.org/FAQPage">
+        <div className="container mx-auto px-4 relative">
+          <motion.div {...fadeUp} className="text-center max-w-2xl mx-auto mb-14">
+            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 text-accent text-sm font-semibold border border-accent/20 mb-4">
+              <HelpCircle className="h-3.5 w-3.5" /> FAQ
+            </span>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mt-2 mb-4">
+              Questions Fréquentes sur nos Articles & Services
+            </h2>
+            <p className="text-muted-foreground">Retrouvez les réponses aux questions posées par les lecteurs de notre blog expert volets et vitrerie.</p>
+          </motion.div>
+
+          <motion.div {...fadeUp} className="max-w-3xl mx-auto">
+            <Accordion type="single" collapsible className="space-y-3">
+              {[
+                { q: "Vos articles de blog sont-ils rédigés par des professionnels ?", a: "Oui, chaque article est rédigé ou validé par nos techniciens certifiés RGE, forts de plus de 10 ans d'expérience terrain en réparation, installation et motorisation de volets roulants à Paris et en Île-de-France." },
+                { q: "Puis-je diagnostiquer ma panne de volet grâce à vos guides ?", a: "Nos guides pratiques vous aident à identifier les pannes courantes (sangle cassée, moteur en panne, lames abîmées). Pour un diagnostic précis et une réparation durable, nous recommandons l'intervention d'un technicien qualifié — le diagnostic est offert." },
+                { q: "Quelles marques de volets recommandez-vous dans vos comparatifs ?", a: "Nos comparatifs couvrent les marques leaders du marché : Somfy, Bubendorff, Profalux, Franciaflex, Simu et Nice. Nous testons et installons ces marques quotidiennement, ce qui nous permet de donner des avis objectifs basés sur notre expérience terrain." },
+                { q: "Proposez-vous des conseils pour réduire sa facture énergétique ?", a: "Oui, plusieurs articles traitent de l'isolation thermique via les volets roulants, du choix du vitrage performant et des aides financières disponibles (MaPrimeRénov', éco-PTZ). Des gestes simples comme la motorisation programmée peuvent réduire votre consommation de 15 à 25%." },
+                { q: "Comment contacter un expert après avoir lu un article ?", a: "Vous pouvez nous joindre directement au 06 03 20 59 67 ou via notre formulaire de devis en ligne. Mentionnez l'article consulté, notre équipe adaptera ses conseils à votre situation spécifique." },
+              ].map((f, i) => (
+                <AccordionItem
+                  key={i}
+                  value={`blog-faq-${i}`}
+                  className="bg-card rounded-2xl border border-border card-shadow hover:card-shadow-hover px-8 transition-all duration-300 group overflow-hidden"
+                  itemScope itemProp="mainEntity" itemType="https://schema.org/Question"
+                >
+                  <AccordionTrigger className="text-left font-display font-bold text-foreground text-base hover:no-underline py-6 group-hover:text-accent transition-colors duration-300">
+                    <div className="flex items-center gap-3 w-full">
+                      <span className="text-accent font-extrabold text-lg opacity-60 group-hover:opacity-100 transition-opacity duration-300">
+                        {String(i + 1).padStart(2, '0')}
+                      </span>
+                      <span itemProp="name">{f.q}</span>
+                    </div>
+                  </AccordionTrigger>
+                  <AccordionContent
+                    className="text-muted-foreground text-sm leading-relaxed pb-6 pl-11"
+                    itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer"
+                  >
+                    <span itemProp="text">{f.a}</span>
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ========== Section Régions Blog ========== */}
+      <section className="py-16 md:py-20 bg-background relative overflow-hidden">
+        <div className="container mx-auto px-4 relative">
+          <motion.div {...fadeUp} className="text-center max-w-2xl mx-auto mb-12">
+            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 text-accent text-sm font-semibold border border-accent/20 mb-4">
+              <MapPin className="h-3.5 w-3.5" /> Couverture Nationale
+            </span>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mt-2 mb-4">
+              Nos Zones d'Intervention en France
+            </h2>
+            <p className="text-muted-foreground">
+              Retrouvez nos services de réparation, installation et motorisation de volets roulants dans toute la France.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-5xl mx-auto mb-10">
+            {[
+              { name: "Paris (75)", link: "/zones-intervention/paris", color: "service-blue", depts: "20 arrondissements" },
+              { name: "Île-de-France", link: "/zones-intervention/ile-de-france", color: "service-emerald", depts: "7 départements" },
+              { name: "Hauts-de-France", link: "/zones-intervention", color: "service-violet", depts: "5 départements" },
+              { name: "Auvergne-Rhône-Alpes", link: "/zones-intervention", color: "service-orange", depts: "12 départements" },
+              { name: "PACA", link: "/zones-intervention", color: "service-rose", depts: "6 départements" },
+              { name: "Normandie", link: "/zones-intervention", color: "service-cyan", depts: "5 départements" },
+              { name: "Grand Est", link: "/zones-intervention", color: "service-blue", depts: "10 départements" },
+              { name: "Occitanie", link: "/zones-intervention", color: "service-orange", depts: "13 départements" },
+              { name: "Nouvelle-Aquitaine", link: "/zones-intervention", color: "service-emerald", depts: "12 départements" },
+              { name: "Bretagne", link: "/zones-intervention", color: "service-violet", depts: "4 départements" },
+            ].map((r, i) => (
+              <motion.div key={r.name} {...staggerItem(i)}>
+                <Link to={r.link} className="block bg-card rounded-xl p-4 border border-border card-shadow hover:card-shadow-hover transition-all duration-500 text-center group">
+                  <div className={`w-10 h-10 rounded-lg bg-${r.color}/10 flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform`}>
+                    <MapPin className={`h-5 w-5 text-${r.color}`} />
+                  </div>
+                  <h3 className="font-display font-bold text-foreground text-sm mb-1 group-hover:text-accent transition-colors">{r.name}</h3>
+                  <p className="text-xs text-muted-foreground">{r.depts}</p>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="text-center">
+            <Link to="/zones-intervention" className="inline-flex items-center gap-2 text-accent font-semibold hover:gap-3 transition-all">
+              Voir toutes nos zones d'intervention <ArrowRight className="h-4 w-4" />
+            </Link>
           </div>
         </div>
       </section>
