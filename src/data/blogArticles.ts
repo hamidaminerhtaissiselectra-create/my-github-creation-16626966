@@ -15,12 +15,12 @@ export const blogArticles: BlogArticle[] = [
   {
     id: "entretien-volets",
     title: "Guide Complet : Entretien et Maintenance des Volets Roulants",
-    excerpt: "Découvrez les meilleures pratiques pour maintenir vos volets roulants en parfait état. Un entretien régulier prolonge la durée de vie de vos volets.",
+    excerpt: "Découvrez les meilleures pratiques pour maintenir vos volets roulants en parfait état. Un entretien régulier évite le dépannage coûteux et prolonge la durée de vie de vos volets.",
     date: "22 février 2026",
     author: "Répar'Action Volets",
     category: "Entretien",
     slug: "entretien-volets",
-    metaDescription: "Guide complet d'entretien des volets roulants : nettoyage, lubrification, vérification des joints. Conseils professionnels par Répar'Action Volets.",
+    metaDescription: "Guide complet d'entretien des volets roulants : nettoyage, lubrification, vérification. Évitez le dépannage grâce aux conseils de Répar'Action Volets.",
     image: "/images/blog/entretien-volets.webp",
     content: `## Pourquoi l'entretien des volets roulants est crucial ?
 
@@ -67,12 +67,12 @@ Contactez **Répar'Action Volets** si vous constatez : des bruits anormaux persi
   {
     id: "somfy-vs-bubendorff",
     title: "Somfy vs Bubendorff : Comparatif Complet des Motorisations 2026",
-    excerpt: "Quelle marque choisir pour motoriser vos volets ? Découvrez les forces et faiblesses de Somfy et Bubendorff dans ce guide détaillé.",
+    excerpt: "Quelle marque choisir pour motoriser vos volets ? Découvrez les forces et faiblesses de Somfy et Bubendorff pour le dépannage et la motorisation.",
     date: "20 février 2026",
     author: "Répar'Action Volets",
     category: "Motorisation",
     slug: "somfy-vs-bubendorff",
-    metaDescription: "Comparatif Somfy vs Bubendorff 2026 : prix, fonctionnalités, domotique. Guide expert par Répar'Action Volets pour choisir votre motorisation.",
+    metaDescription: "Comparatif Somfy vs Bubendorff 2026 : prix, dépannage, fonctionnalités, domotique. Guide expert Répar'Action Volets pour choisir votre motorisation.",
     image: "/images/blog/somfy-vs-bubendorff.webp",
     content: `## Somfy vs Bubendorff : Le comparatif définitif 2026
 
@@ -140,7 +140,7 @@ Chez **Répar'Action Volets**, nous vous accompagnons dans votre choix. Contacte
   {
     id: "guide-motorisation",
     title: "Motoriser ses Volets Roulants en 2026 : Guide Complet",
-    excerpt: "La motorisation de vos volets roulants offre confort, sécurité et économies d'énergie. Découvrez tout ce qu'il faut savoir avant de se lancer.",
+    excerpt: "La motorisation de vos volets roulants offre confort, sécurité et économies d'énergie. Fini le dépannage de sangles cassées, découvrez tout ce qu'il faut savoir.",
     date: "18 février 2026",
     author: "Répar'Action Volets",
     category: "Motorisation",
@@ -206,12 +206,12 @@ Contactez-nous au **06 03 20 59 67** pour un devis gratuit.`
   {
     id: "prix-reparation-volet-roulant",
     title: "Prix Réparation Volet Roulant en 2026 : Tarifs et Guide Complet",
-    excerpt: "Combien coûte la réparation d'un volet roulant ? Découvrez tous les tarifs détaillés selon le type de panne et nos conseils pour éviter les arnaques.",
+    excerpt: "Combien coûte le dépannage ou la réparation d'un volet roulant ? Découvrez tous les tarifs détaillés selon le type de panne et nos conseils pour éviter les arnaques.",
     date: "16 février 2026",
     author: "Répar'Action Volets",
     category: "Tarifs",
     slug: "prix-reparation-volet-roulant",
-    metaDescription: "Prix réparation volet roulant 2026 : tarifs détaillés par type de panne. De 80€ à 300€. Devis gratuit Répar'Action Volets. Guide complet.",
+    metaDescription: "Prix dépannage et réparation volet roulant 2026 : tarifs détaillés par type de panne. De 80€ à 300€. Devis gratuit Répar'Action Volets.",
     image: "/images/blog/prix-reparation.webp",
     content: `## Combien coûte la réparation d'un volet roulant en 2026 ?
 
@@ -260,7 +260,7 @@ Chez **Répar'Action Volets**, le diagnostic est toujours gratuit et sans engage
   {
     id: "comment-choisir-volet-roulant",
     title: "Comment Choisir son Volet Roulant : Le Guide Ultime 2026",
-    excerpt: "Aluminium, PVC ou bois ? Manuel ou motorisé ? Découvrez tous les critères pour choisir le volet roulant idéal pour votre habitat.",
+    excerpt: "Aluminium, PVC ou bois ? Manuel ou motorisé ? Découvrez tous les critères pour choisir le volet roulant idéal et éviter le dépannage récurrent.",
     date: "14 février 2026",
     author: "Répar'Action Volets",
     category: "Installation",
@@ -382,12 +382,12 @@ Nous intervenons **sous 48h** (le jour même pour les urgences de sécurité). D
   {
     id: "double-vitrage-avantages-prix",
     title: "Double Vitrage : Avantages, Prix et Aides Financières 2026",
-    excerpt: "Le double vitrage est essentiel pour l'isolation de votre maison. Découvrez ses avantages, les prix pratiqués et les aides disponibles.",
+    excerpt: "Le double vitrage est essentiel pour l'isolation de votre maison. Découvrez ses avantages, les prix pratiqués, le dépannage en urgence et les aides disponibles.",
     date: "10 février 2026",
     author: "Répar'Action Volets",
     category: "Vitrerie",
     slug: "double-vitrage-avantages-prix",
-    metaDescription: "Double vitrage 2026 : avantages, prix détaillés et aides financières. Guide complet isolation thermique et phonique. Répar'Action Volets.",
+    metaDescription: "Double vitrage 2026 : avantages, prix, dépannage bris de glace et aides financières. Guide complet isolation thermique et phonique. Répar'Action Volets.",
     image: "/images/blog/vitrerie.webp",
     content: `## Double vitrage : tout savoir en 2026
 
@@ -517,7 +517,7 @@ Nous prenons en charge l'intégralité de votre projet domotique : conseil, four
   {
     id: "isolation-thermique-volets-roulants",
     title: "Isolation Thermique par les Volets Roulants : Économisez jusqu'à 25%",
-    excerpt: "Les volets roulants sont un excellent moyen d'améliorer l'isolation de votre maison. Découvrez comment réduire vos factures d'énergie.",
+    excerpt: "Les volets roulants sont un excellent moyen d'améliorer l'isolation de votre maison et de réduire le besoin de dépannage. Découvrez comment réduire vos factures.",
     date: "6 février 2026",
     author: "Répar'Action Volets",
     category: "Économies",
@@ -581,7 +581,7 @@ Contactez **Répar'Action Volets** au **06 03 20 59 67** pour un bilan thermique
   {
     id: "aides-financieres-renovation-volets-2026",
     title: "Aides Financières Rénovation Volets 2026 : MaPrimeRénov', TVA, Éco-PTZ",
-    excerpt: "Découvrez toutes les aides financières pour la rénovation de vos volets en 2026. Jusqu'à 50% d'économies sur vos travaux.",
+    excerpt: "Découvrez toutes les aides financières pour le dépannage, la rénovation et l'installation de vos volets en 2026. Jusqu'à 50% d'économies sur vos travaux.",
     date: "4 février 2026",
     author: "Répar'Action Volets",
     category: "Financement",
@@ -663,12 +663,12 @@ Appelez le **06 03 20 59 67** pour un conseil gratuit sur vos aides.`
   {
     id: "reparation-volet-paris-15",
     title: "Réparation de Volets Roulants Paris 15e : Expert Local de Confiance",
-    excerpt: "Votre volet est bloqué dans le 15e arrondissement ? Découvrez notre service de réparation rapide à Paris 15, quartier par quartier.",
+    excerpt: "Votre volet est bloqué dans le 15e arrondissement ? Découvrez notre service de dépannage et réparation rapide à Paris 15, quartier par quartier.",
     date: "2 février 2026",
     author: "Répar'Action Volets",
     category: "Paris Local",
     slug: "reparation-volet-paris-15",
-    metaDescription: "Réparation volets roulants Paris 15e : intervention sous 24h à Beaugrenelle, Javel, Commerce, Vaugirard. Devis gratuit. Répar'Action Volets.",
+    metaDescription: "Dépannage et réparation volets roulants Paris 15e : intervention sous 24h à Beaugrenelle, Javel, Commerce, Vaugirard. Devis gratuit. Répar'Action Volets.",
     image: "/images/zones/paris-15.webp",
     content: `## Réparation de volets roulants dans le 15e arrondissement de Paris
 
@@ -703,12 +703,12 @@ Appelez le **06 03 20 59 67** pour une intervention rapide dans le 15e.`
   {
     id: "reparation-volet-boulogne-billancourt",
     title: "Réparation Volets Roulants Boulogne-Billancourt : Votre Expert Proche de Chez Vous",
-    excerpt: "Service de réparation et motorisation de volets roulants à Boulogne-Billancourt. Intervention rapide dans tous les quartiers.",
+    excerpt: "Service de dépannage, réparation et motorisation de volets roulants à Boulogne-Billancourt. Intervention rapide dans tous les quartiers.",
     date: "1 février 2026",
     author: "Répar'Action Volets",
     category: "Île-de-France Local",
     slug: "reparation-volet-boulogne-billancourt",
-    metaDescription: "Réparation volets roulants Boulogne-Billancourt : intervention 24-48h, tous quartiers. Expert Somfy & Bubendorff. Devis gratuit Répar'Action Volets.",
+    metaDescription: "Dépannage volets roulants Boulogne-Billancourt : intervention 24-48h, tous quartiers. Expert Somfy & Bubendorff. Devis gratuit Répar'Action Volets.",
     image: "/images/zones/boulogne.webp",
     content: `## Volets roulants à Boulogne-Billancourt : un parc diversifié
 
@@ -785,12 +785,12 @@ Contactez-nous au **06 03 20 59 67** pour un devis gratuit.`
   {
     id: "reparation-volet-versailles-78",
     title: "Réparation Volets Roulants Versailles et Yvelines : Expert Local 78",
-    excerpt: "Intervention rapide pour la réparation et l'installation de volets roulants à Versailles, Saint-Germain-en-Laye et dans les Yvelines.",
+    excerpt: "Dépannage et intervention rapide pour la réparation et l'installation de volets roulants à Versailles, Saint-Germain-en-Laye et dans les Yvelines.",
     date: "28 janvier 2026",
     author: "Répar'Action Volets",
     category: "Île-de-France Local",
     slug: "reparation-volet-versailles-78",
-    metaDescription: "Réparation volets roulants Versailles Yvelines 78 : intervention rapide, motorisation Somfy, installation sur-mesure. Devis gratuit Répar'Action.",
+    metaDescription: "Dépannage volets roulants Versailles Yvelines 78 : intervention rapide, motorisation Somfy, installation sur-mesure. Devis gratuit Répar'Action.",
     image: "/images/zones/versailles.webp",
     content: `## Volets roulants à Versailles et dans les Yvelines
 
@@ -826,12 +826,12 @@ Appelez le **06 03 20 59 67** pour un devis gratuit dans les Yvelines.`
   {
     id: "reparation-volet-paris-11-marais",
     title: "Réparation Volets Roulants Paris 11e & Le Marais : Dépannage Express",
-    excerpt: "Expert en volets roulants dans le 11e arrondissement et le Marais. Intervention rapide pour particuliers et commerçants.",
+    excerpt: "Dépannage express de volets roulants dans le 11e arrondissement et le Marais. Intervention rapide pour particuliers et commerçants.",
     date: "26 janvier 2026",
     author: "Répar'Action Volets",
     category: "Paris Local",
     slug: "reparation-volet-paris-11-marais",
-    metaDescription: "Réparation volets roulants Paris 11e Marais : dépannage express, rideaux métalliques commerces, motorisation. Devis gratuit Répar'Action Volets.",
+    metaDescription: "Dépannage volets roulants Paris 11e Marais : intervention express, rideaux métalliques commerces, motorisation. Devis gratuit Répar'Action Volets.",
     image: "/images/zones/paris-11.webp",
     content: `## Volets roulants et rideaux métalliques dans le 11e arrondissement
 
@@ -902,7 +902,7 @@ Appelez le **06 03 20 59 67** pour un devis gratuit dans le Val-de-Marne.`
   {
     id: "choisir-volet-roulant-marais-paris",
     title: "Comment Choisir son Volet Roulant dans le Marais à Paris ?",
-    excerpt: "Le Marais impose des contraintes architecturales uniques. Découvrez comment choisir un volet roulant adapté aux hôtels particuliers et immeubles classés du 3e et 4e arrondissement.",
+    excerpt: "Le Marais impose des contraintes architecturales uniques. Découvrez comment choisir un volet roulant adapté et éviter le dépannage coûteux dans les immeubles classés du 3e et 4e.",
     date: "3 mars 2026",
     author: "Répar'Action Volets",
     category: "Paris Local",
@@ -1171,7 +1171,7 @@ Appelez le **06 03 20 59 67** pour un diagnostic gratuit.`
   {
     id: "isolation-phonique-volets-grands-boulevards",
     title: "Isolation Phonique par les Volets Roulants : Guide pour les Grands Boulevards de Paris",
-    excerpt: "Vous habitez sur les Grands Boulevards, près d'une gare ou d'un axe passant ? Découvrez comment les volets roulants peuvent réduire le bruit de 45 dB.",
+    excerpt: "Vous habitez sur les Grands Boulevards, près d'une gare ou d'un axe passant ? Découvrez comment le dépannage et l'installation de volets roulants peuvent réduire le bruit de 45 dB.",
     date: "25 février 2026",
     author: "Répar'Action Volets",
     category: "Paris Local",
@@ -1263,7 +1263,7 @@ Appelez le **06 03 20 59 67** pour un diagnostic acoustique gratuit.`
   {
     id: "securite-volets-roulants-neuilly-sur-seine",
     title: "Sécurité des Volets Roulants à Neuilly-sur-Seine : Guide Anti-Effraction Expert",
-    excerpt: "Neuilly-sur-Seine est l'une des villes les plus ciblées par les cambrioleurs en Île-de-France. Découvrez les solutions de volets anti-effraction certifiées.",
+    excerpt: "Neuilly-sur-Seine est l'une des villes les plus ciblées par les cambrioleurs. Découvrez le dépannage et les solutions de volets anti-effraction certifiées.",
     date: "24 février 2026",
     author: "Répar'Action Volets",
     category: "Île-de-France Local",
