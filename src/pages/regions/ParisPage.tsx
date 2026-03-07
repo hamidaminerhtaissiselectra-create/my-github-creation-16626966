@@ -42,8 +42,8 @@ const ParisPage = () => {
   const { phoneNumber } = usePhoneCall();
 
   useSEO({
-    title: "Réparation Volets Roulants Paris | Tous les Arrondissements | Répar'Action Volets",
-    description: "Expert en réparation de volets roulants à Paris. Intervention rapide dans les 20 arrondissements. Dépannage express, installation et motorisation. Devis gratuit.",
+    title: "Dépannage & Réparation Volets Roulants Paris | Tous Arrondissements | Répar'Action",
+    description: "Expert en dépannage et réparation de volets roulants à Paris. Intervention rapide dans les 20 arrondissements. Dépannage express, installation et motorisation. Devis gratuit.",
     keywords: "réparation volets Paris, volets roulants arrondissements Paris, dépannage volets Paris, installation volets 75",
     canonicalUrl: "https://reparaction-volets.fr/zones-intervention/paris",
   });
@@ -199,7 +199,7 @@ const ParisPage = () => {
               transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
               className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-8 text-foreground"
             >
-              Réparation de Volets Roulants à <span className="text-accent">Paris</span>
+              Dépannage & Réparation de Volets Roulants à <span className="text-accent">Paris</span>
             </motion.h1>
             
             <motion.p 
@@ -208,7 +208,7 @@ const ParisPage = () => {
               transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
               className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl leading-relaxed"
             >
-              Répar'Action Volets est votre expert de proximité dans tous les arrondissements de Paris. Intervention rapide, diagnostic gratuit et garantie 3 ans sur toutes nos prestations.
+              Répar'Action Volets est votre expert de proximité pour le dépannage et la réparation de volets roulants dans tous les arrondissements de Paris. Intervention rapide, diagnostic gratuit et garantie 3 ans.
             </motion.p>
             
             <motion.div 
@@ -438,8 +438,8 @@ const ParisPage = () => {
       {/* CTA Section */}
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Besoin d'une réparation à Paris ?</h2>
-          <p className="text-xl mb-10 opacity-90 max-w-2xl mx-auto">Contactez-nous dès maintenant pour une intervention rapide et un devis gratuit dans votre arrondissement.</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Besoin d'un dépannage à Paris ?</h2>
+          <p className="text-xl mb-10 opacity-90 max-w-2xl mx-auto">Contactez-nous pour un dépannage rapide et un devis gratuit dans votre arrondissement.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" className="text-lg px-10" asChild>
               <a href="/#devis">Demander un devis gratuit</a>

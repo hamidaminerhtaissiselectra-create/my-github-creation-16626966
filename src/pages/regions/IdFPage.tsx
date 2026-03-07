@@ -42,8 +42,8 @@ const IdFPage = () => {
   const { phoneNumber } = usePhoneCall();
 
   useSEO({
-    title: "Réparation Volets Île-de-France | 7 Départements | Répar'Action Volets",
-    description: "Expert en réparation de volets roulants en Île-de-France. Intervention rapide dans les départements 77, 78, 91, 92, 93, 94, 95. Dépannage express et installation.",
+    title: "Dépannage & Réparation Volets Île-de-France | 7 Départements | Répar'Action",
+    description: "Expert en dépannage et réparation de volets roulants en Île-de-France. Intervention rapide dans les départements 77, 78, 91, 92, 93, 94, 95. Dépannage express et installation.",
     keywords: "réparation volets Île-de-France, volets roulants IdF, dépannage volets 77 78 91 92 93 94 95, installation volets",
     canonicalUrl: "https://reparaction-volets.fr/zones-intervention/ile-de-france",
   });
@@ -242,7 +242,7 @@ const IdFPage = () => {
               transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
               className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-8 text-foreground"
             >
-              Réparation de Volets en <span className="text-accent">Île-de-France</span>
+              Dépannage & Réparation de Volets en <span className="text-accent">Île-de-France</span>
             </motion.h1>
             
             <motion.p 
@@ -251,7 +251,7 @@ const IdFPage = () => {
               transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
               className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl leading-relaxed"
             >
-              Répar'Action Volets intervient dans toute la région parisienne. Nos techniciens couvrent les 7 départements (77, 78, 91, 92, 93, 94, 95) pour garantir votre satisfaction. Diagnostic gratuit et garantie 3 ans.
+              Répar'Action Volets assure le dépannage et la réparation de volets roulants dans toute la région parisienne. Nos techniciens couvrent les 7 départements (77, 78, 91, 92, 93, 94, 95). Diagnostic gratuit et garantie 3 ans.
             </motion.p>
             
             <motion.div 
@@ -505,8 +505,8 @@ const IdFPage = () => {
       {/* CTA Section */}
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Besoin d'une réparation en Île-de-France ?</h2>
-          <p className="text-xl mb-10 opacity-90 max-w-2xl mx-auto">Contactez nos experts pour un diagnostic gratuit et une intervention rapide sur vos volets roulants.</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Besoin d'un dépannage en Île-de-France ?</h2>
+          <p className="text-xl mb-10 opacity-90 max-w-2xl mx-auto">Contactez nos experts pour un dépannage rapide, un diagnostic gratuit et une intervention sur vos volets roulants.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" className="text-lg px-10" asChild>
               <a href="/#devis">Demander un devis gratuit</a>
